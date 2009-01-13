@@ -2,10 +2,10 @@
 "
 " Language:     SQL Server 2008 TSQL
 " Maintainer:   Ben Hoffstein <benjamin.hoffstein AT red-hook.com>
-" Last Change:  2008-12-04
-" Version:      1.0.1
+" Last Change:  2009-01-13
+" Version:      1.0.2
 "
-" HINT: Type zR if you don't know how to use folds
+" Hint: Type zR if you don't know how to use folds
 "
 " Options:
 "
@@ -1242,6 +1242,10 @@ syn match tsqlFunction "\<USER_NAME("he=e-1
 syn match tsqlFunction "\<XACT_STATE("he=e-1
 " }}}
 
+" Function parameters {{{
+syn keyword functionParam year quarter month dayofyear day week weekday hour minute second millisecond
+" }}}
+
 " Define the default highlighting.
 " For version 5.7 and earlier: only when not done already
 " For version 5.8 and later: only when an item doesn't have highlighting yet
@@ -1271,6 +1275,7 @@ if version >= 508 || !exists("did_tsql_syn_inits")
   HiLink systemProc Function
   HiLink tsqlFunction Function
   HiLink svrOption PreProc
+  HiLink functionParam Statement
 
   delcommand HiLink
 endif
