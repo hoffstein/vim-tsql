@@ -8,7 +8,7 @@ Contact: benjamin.hoffstein AT red-hook DOT com
 
 The latest version of the file is always available on Vim.org:
 
-[http://www.vim.org/scripts/script.php?script_id=2449]
+[loc]
 
 
 ### INSTALLATION
@@ -28,3 +28,4 @@ The latest version of the file is always available on Vim.org:
 
 4. The file contains instructions for enabling/disabling several highlighting options (for example, system stored procedures). By default, all syntax is highlighted.
 
+[loc]: <http://www.vim.org/scripts/script.php?script_id=2449>
