@@ -8,7 +8,7 @@ Contact: benjamin.hoffstein AT red-hook DOT com
 
 The latest version of the file is always available on Vim.org:
 
-http://www.vim.org/scripts/script.php?script_id=2449
+<a href="http://www.vim.org/scripts/script.php?script_id=2449">http://www.vim.org/scripts/script.php?script_id=2449</a>
 
 ### INSTALLATION
 
