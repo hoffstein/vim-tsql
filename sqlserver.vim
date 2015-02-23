@@ -1247,7 +1247,10 @@ syn keyword functionParam year quarter month dayofyear day week weekday hour min
 " }}}
 
 " Object Name {{{
+<<<<<<< HEAD
 " syn match tsqlObjectName "\[[a-z,A-Z,0-9, ,.,/,\,_,(,),%]\{1,}\]"
+=======
+>>>>>>> marpar
 syn region tsqlObjectName start=+\[+ end=+\]+
 " }}}
 
