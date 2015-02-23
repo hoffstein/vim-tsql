@@ -106,7 +106,7 @@ syn match tsqlKeyword "\<year\>"
 " odbc keywords {{{
 syn keyword odbcKeyword absolute action ada add all allocate
 syn keyword odbcKeyword and any are as asc assertion
-syn keyword odbcKeyword at authorization 
+syn keyword odbcKeyword at authorization
 syn match odbcKeyword "\<alter\>"
 syn keyword odbcKeyword begin between bit bit_length both by
 syn keyword odbcKeyword cascade cascaded case catalog
@@ -1034,7 +1034,7 @@ syn match tsqlNumber "-\=\<\d*\.\=[0-9_]\>"
 " }}}
 
 " Data types {{{
-syn keyword tsqlType int bigint binary bit char CLR cursor
+syn keyword tsqlType int bigint binary bit char CLR cursor tinyint
 syn keyword tsqlType date datetime datetime2 datetimeoffset decimal
 syn keyword tsqlType float hierarchyid image int money nchar ntext
 syn keyword tsqlType numeric nvarchar real rowversion
@@ -1246,6 +1246,11 @@ syn match tsqlFunction "\<XACT_STATE("he=e-1
 syn keyword functionParam year quarter month dayofyear day week weekday hour minute second millisecond
 " }}}
 
+" Object Name {{{
+" syn match tsqlObjectName "\[[a-z,A-Z,0-9, ,.,/,\,_,(,),%]\{1,}\]"
+syn region tsqlObjectName start=+\[+ end=+\]+
+" }}}
+
 " Define the default highlighting.
 " For version 5.7 and earlier: only when not done already
 " For version 5.8 and later: only when an item doesn't have highlighting yet
@@ -1276,6 +1281,7 @@ if version >= 508 || !exists("did_tsql_syn_inits")
   HiLink tsqlFunction Function
   HiLink svrOption PreProc
   HiLink functionParam Statement
+  HiLink tsqlObjectName Normal
 
   delcommand HiLink
 endif
