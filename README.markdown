@@ -1,14 +1,8 @@
 ## SQL Server 2005/2008 syntax file for Vim
 
 Author:  Benjamin Hoffstein  
-Contact: benjamin.hoffstein AT red-hook DOT com  
+Contact: ben@hoffstein.net
 
-
-### DOWNLOAD
-
-The latest version of the file is always available on Vim.org:
-
-<a href="http://www.vim.org/scripts/script.php?script_id=2449">http://www.vim.org/scripts/script.php?script_id=2449</a>
 
 ### INSTALLATION
 
